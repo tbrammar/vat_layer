@@ -7,11 +7,6 @@ module Apilayer
     COUNTRY_CRITERIA_MISSING_MSG = "You must provide either :country_code or :ip_address"
 
     ##
-    # The following constants determine which values in Apilayer.configs to be used
-    # in order to make a connection to vatlayer
-    APILAYER_CONFIG_KEY = :vat_key
-    APILAYER_SECURE = :vat_https
-    ##
     # Validates whether a supported criteria has been provided to .rate and .price
     def self.validate_country_criteria(criteria)
       unless [:country_code, :ip_address].include? criteria
