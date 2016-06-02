@@ -1,0 +1,57 @@
+== vat_layer {<img src="https://secure.travis-ci.org/actfong/vat_layer.png"/>}[http://travis-ci.org/actfong/vat_layer] {<img src="https://codeclimate.com/github/actfong/vat_layer.png"/>}[https://codeclimate.com/github/actfong/vat_layer] {<img src="https://badge.fury.io/rb/vat_layer.svg" alt="Gem Version" />}[https://badge.fury.io/rb/vat_layer] 
+
+Ruby wrapper for vatlayer of apilayer.
+See https://vatlayer.com/ and http://apilayer.com for more details.
+
+=== Introduction
+This gem is extracted from the previous version of apilayer gem. The vat_layer gem depends on the apilayer gem to configure and create connections to apilayer.net
+
+=== Installation
+
+==== Using Bundler
+
+Add apilayer in your <tt>Gemfile</tt>:
+
+  gem "apilayer"
+
+Run the following in your console:
+
+  $ bundle install
+  
+=== Usage
+
+==== Set up vat_layer
+Once you have signed up for *vatlayer.com*, you will receive an access_key. 
+Then configure your Apilayer::Vat module like this:
+
+  Apilayer::Vat.configure do |configs|
+    configs.access_key = "my_access_key_123"
+    configs.https = true
+  end
+
+Please note that the https configuration is optional and only available to paid-accounts.
+If unset, these configuration-values are just nil.
+
+You can always review you configurations with:
+
+  Apilayer::Vat.configs
+
+Once your configurations are set, you are ready to go
+
+==== vatlayer
+After setting the access_key for *vatlayer*, you can use Apilayer::Vat to call *vatlayer*'s API
+
+  Apilayer::Vat.validate("LU26375245")
+  Apilayer::Vat.rate(:country_code, "NL")
+  Apilayer::Vat.rate(:ip_address, "176.249.153.36")
+  Apilayer::Vat.rate_list
+  Apilayer::Vat.price(100, :country, "NL")
+  Apilayer::Vat.price(100, :ip_address, "176.249.153.36")
+  
+==== Re-Configure Apilayer
+If you happened to have forgotten to set or entered an incorrect value, you can re-configure your Apilayer module by:
+
+  # Example: reconfigure https
+  Apilayer::Vat.configure do |configs|
+    configs.https = true
+  end
