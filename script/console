@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler"
+Bundler.require :default, :development
+file = File.expand_path("../../lib/vatlayer.rb", __FILE__)
+require file
+
+puts "Loading vatlayer"
+Pry.start
