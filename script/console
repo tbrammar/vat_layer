@@ -5,5 +5,8 @@ Bundler.require :default, :development
 file = File.expand_path("../../lib/vatlayer.rb", __FILE__)
 require file
 
-puts "Loading vatlayer"
+puts "Configure your vat_layer by:\n\n"
+puts "Apilayer::Vat.configure do |c|"
+puts "  c.access_key = 'your_access_key'"
+puts "end\n\n"
 Pry.start
