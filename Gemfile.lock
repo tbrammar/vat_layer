@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    vatlayer (1.0.0)
+    vat_layer (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -68,6 +68,6 @@ DEPENDENCIES
   rake (~> 10.1, >= 0.10.1)
   rspec (~> 3.0, >= 3.0.0)
   simplecov (~> 0.11, >= 0.11.0)
-  vatlayer!
+  vat_layer!
   vcr (~> 3.0, >= 3.0.1)
   webmock (~> 2.0, >= 2.0.1)

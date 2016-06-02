@@ -1,4 +1,4 @@
 require 'rubygems'
 require 'apilayer'
 
-require "apilayer/vatlayer"
+require "apilayer/vat"
