@@ -12,7 +12,7 @@ This gem is extracted from the previous version of apilayer gem. The vat_layer g
 
 Add apilayer in your <tt>Gemfile</tt>:
 
-  gem "apilayer"
+  gem "vat_layer"
 
 Run the following in your console:
 
@@ -48,7 +48,7 @@ After setting the access_key for *vatlayer*, you can use Apilayer::Vat to call *
   Apilayer::Vat.price(100, :country, "NL")
   Apilayer::Vat.price(100, :ip_address, "176.249.153.36")
   
-==== Re-Configure Apilayer
+==== Re-Configure access_key and https
 If you happened to have forgotten to set or entered an incorrect value, you can re-configure your Apilayer module by:
 
   # Example: reconfigure https
