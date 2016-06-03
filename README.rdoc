@@ -6,7 +6,7 @@ See https://vatlayer.com/ and http://apilayer.com for more details.
 === Introduction
 This gem is extracted from the previous version of apilayer gem. 
 
-While the *vat_layer* gem focues on the functionalities offered by vatlayer, it depends on the *apilayer* gem to configure and create connections to apilayer.net
+While the *vat_layer* gem focuses on the functionalities offered by vatlayer, it depends on the *apilayer* gem to configure and create connections to apilayer.net
 
 === Installation
 
