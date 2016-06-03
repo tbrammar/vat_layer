@@ -1,9 +1,9 @@
 Gem::Specification.new do |spec|
   spec.name           = 'vat_layer'
-  spec.version        = '0.1.1'
+  spec.version        = '1.0.0'
   spec.authors        = ["Alex Fong"]
   spec.email          = ["actfong@gmail.com"]
-  spec.files          = Dir["lib/vatlayer.rb", 
+  spec.files          = Dir["lib/vat_layer.rb", 
                           "lib/apilayer/*",
                           "Gemfile",
                           "LICENSE",

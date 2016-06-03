@@ -10,4 +10,4 @@ VCR.configure do |c|
   c.hook_into :webmock
 end
 
-require 'vatlayer'
+require 'vat_layer'

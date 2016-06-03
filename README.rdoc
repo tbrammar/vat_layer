@@ -4,7 +4,9 @@ Ruby wrapper for vatlayer of apilayer.
 See https://vatlayer.com/ and http://apilayer.com for more details.
 
 === Introduction
-This gem is extracted from the previous version of apilayer gem. The vat_layer gem depends on the apilayer gem to configure and create connections to apilayer.net
+This gem is extracted from the previous version of apilayer gem. 
+
+While the *vat_layer* gem focues on the functionalities offered by vatlayer, it depends on the *apilayer* gem to configure and create connections to apilayer.net
 
 === Installation
 
@@ -19,6 +21,9 @@ Run the following in your console:
   $ bundle install
   
 === Usage
+
+==== Add to your application
+  require "vat_layer"
 
 ==== Set up vat_layer
 Once you have signed up for *vatlayer.com*, you will receive an access_key. 
