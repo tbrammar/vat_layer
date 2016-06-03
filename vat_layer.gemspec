@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.homepage       = "https://github.com/actfong/vat_layer"
   spec.licenses       = %w(MIT)
 
-  # spec.add_runtime_dependency 'apilayer', '~> 2.0', '>= 2.0.0'
+  spec.add_runtime_dependency 'apilayer', '~> 2.0', '>= 2.0.0'
 
   spec.add_development_dependency 'rake', '~> 10.1', '>= 0.10.1'
   spec.add_development_dependency 'pry', '~> 0.10', '>= 0.10.1'
