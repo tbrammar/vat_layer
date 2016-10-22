@@ -22,7 +22,7 @@ module Apilayer
     # Example:
     #   Apilayer::Vat.validate("LU26375245")
     def self.validate(vat_number)
-      params = {:vat_number => vat_number}
+      params = {vat_number: vat_number}
       get_and_parse("validate", params)
     end
 
@@ -55,7 +55,7 @@ module Apilayer
     #   Apilayer::Vat.price(100, :ip_address, "176.249.153.36")
     def self.price(price, criteria, value)
       validate_country_criteria(criteria)
-      params = {:amount => price, criteria.to_sym => value}
+      params = {amount: price, criteria.to_sym => value}
       get_and_parse("price", params)
     end
 
