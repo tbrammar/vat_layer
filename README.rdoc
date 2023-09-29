@@ -12,9 +12,15 @@ While the *vat_layer* gem focuses on the functionalities offered by vatlayer, it
 
 ==== Using Bundler
 
-Add apilayer in your <tt>Gemfile</tt>:
+Add vat_layer in your <tt>Gemfile</tt>:
 
-  gem "vat_layer"
+For Ruby 3.0 and above
+
+  gem "vat_layer", "~> 2.0"
+
+For < Ruby 3.0
+
+  gem "vat_layer", "~> 1.0"
 
 Run the following in your console:
 
