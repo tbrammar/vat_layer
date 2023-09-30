@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name           = 'vat_layer'
-  spec.version        = '1.1.0'
+  spec.version        = '2.0.0'
   spec.authors        = ["Alex Fong"]
   spec.email          = ["actfong@gmail.com"]
   spec.files          = Dir["lib/vat_layer.rb", 
@@ -16,13 +16,14 @@ Gem::Specification.new do |spec|
   spec.homepage       = "https://github.com/actfong/vat_layer"
   spec.licenses       = %w(MIT)
 
-  spec.add_runtime_dependency 'apilayer', '~> 2.1'
+  spec.add_runtime_dependency 'apilayer', '~> 3.0'
 
   spec.add_development_dependency 'rake', '~> 12.1'
-  spec.add_development_dependency 'pry', '~> 0.11'
-  spec.add_development_dependency 'bundler', '~> 1.16'
-  spec.add_development_dependency 'rspec', '~> 3.7'
-  spec.add_development_dependency 'simplecov', '~> 0.14'
-  spec.add_development_dependency 'vcr', '~> 4.0'
-  spec.add_development_dependency 'webmock', '~> 3.4'
+  spec.add_development_dependency 'pry', '~> 0.14'
+  spec.add_development_dependency 'bundler', '~> 2.0'
+  spec.add_development_dependency 'rspec', '~> 3.12'
+  spec.add_development_dependency 'simplecov', '~> 0.22'
+  spec.add_development_dependency 'vcr', '~> 6.0'
+  spec.add_development_dependency 'webmock', '~> 3.19'
+  spec.add_development_dependency 'rexml', '~> 3.2'
 end
