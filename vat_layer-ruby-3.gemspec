@@ -1,22 +1,21 @@
 Gem::Specification.new do |spec|
-  spec.name           = 'vat_layer'
-  spec.version        = '2.0.0'
-  spec.authors        = ["Alex Fong"]
-  spec.email          = ["actfong@gmail.com"]
+  spec.name           = 'vat_layer-ruby-3'
+  spec.version        = '1.0.0'
+  spec.authors        = ["Alex Fong, Tom Brammar"]
+  spec.email          = ["rubygems-org@premiacapital.com"]
   spec.files          = Dir["lib/vat_layer.rb", 
                           "lib/apilayer/*",
                           "Gemfile",
                           "LICENSE",
-                          "Rakefile",
-                          "README.rdoc"
+                          "Rakefile"
                         ]
 
   spec.summary        = %q{Ruby wrapper for vatlayer by apilayer. See https://vatlayer.com/ and https://apilayer.com/ for more details.}
-  spec.description    = %q{Ruby wrapper for vatlayer by apilayer. This gem depends on the apilayer gem, which provides a common connection-interface to various services of apilayer.net (such as currencylayer and vatlayer). See https://currencylayer.com/ and https://apilayer.com/ for more details.}
+  spec.description    = %q{Ruby wrapper for vatlayer by apilayer. This gem depends on the apilayer-ruby-3 gem, which provides a common connection-interface to various services of apilayer.net. See https://apilayer.com/ for more details.}
   spec.homepage       = "https://github.com/actfong/vat_layer"
   spec.licenses       = %w(MIT)
 
-  spec.add_runtime_dependency 'apilayer', '~> 3.0'
+  spec.add_runtime_dependency 'apilayer-ruby-3', '~> 1.0'
 
   spec.add_development_dependency 'rake', '~> 12.1'
   spec.add_development_dependency 'pry', '~> 0.14'
