@@ -1,5 +1,5 @@
 Gem::Specification.new do |spec|
-  spec.name           = 'vat_layer'
+  spec.name           = 'vat_layer-ruby-3'
   spec.version        = '1.0.0'
   spec.authors        = ["Alex Fong, Tom Brammar"]
   spec.email          = ["rubygems-org@premiacapital.com"]
